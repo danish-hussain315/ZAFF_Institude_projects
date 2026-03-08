@@ -31,7 +31,37 @@ header{
     text-decoration: none;
     color: #ffffffd9;
 }
-
+.header-center{
+    height: 40px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    /* background-color: #6f42c1; */
+    border:1px solid #ffffffa9;
+    font-size: 25px;
+    border-radius: 5px;
+}
+.left_button{ 
+    height: 20px;
+    background-color: #6f42c1; 
+    color: #ffffffd9;
+    border: none;
+}
+.right_button{
+    width: 40px;
+    height: 25px;
+    background-color: #562ba5; 
+    border-radius: 5px;
+    border: none;
+    color: #ffffffd9;
+    /* border: 1px solid black; */
+}
+.header-center button{
+    height: 20px;
+    margin: 0;
+}
 .header-right{
     display: flex;
     gap: 25px;
@@ -46,5 +76,101 @@ header{
 .container{
     width: 100vw;
     height: 830px;
-    background: linear-gradient(80deg, #88d4d4, #bdbbb9, #d1ccb5);
+    background: linear-gradient(80deg, #88d4d4, #ffffff, #d1ccb5);
 }
+.inner-container{
+    width: 100%;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding-top: 30px;
+}
+.updates{
+    width: 300px;
+    font-size: 16px;
+    background-color: #FFE484;
+    text-align: center;
+    border-radius: 10px;
+    color: #212529;
+}
+#bootstrap-logo{
+    font-size: 160px;
+    color: #6f42c1;
+}
+
+h1{
+    width: 750px;
+    text-align: center;
+    font-size: 64px;
+    font-weight:520 ;
+}
+.inner-container p{
+    width: 780px;
+    font-size: 24px;
+    text-align: center;
+    color: #212529BF;
+    
+}
+.two-buttons{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.left{
+    width: 300px;
+    height: 60px;
+    font-size: 18px;
+    background-color: #21252952;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 5px;
+}
+.right{
+    width: 240px;
+    height: 60px;
+    font-size: 18px;
+    background-color: #712cf9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.right a{
+    color: white;
+    text-decoration: none;
+}
+.inner-container-p{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+p a{
+    color: #6c757d;
+}
+.img-anchor{
+    width: 400px;
+    height: 130px;
+    display: flex;
+    gap: 20px;
+}
+
+.img-anchor-span{
+    width: 225px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+.img-anchor-span span a{
+    text-decoration: none;
+    color: #212529;
+}
+
