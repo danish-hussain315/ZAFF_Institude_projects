@@ -648,12 +648,17 @@ button:hover{
     padding-bottom: 80px;
 }
 .seasonsale{
+    box-sizing: border-box;
     background-color: #C026D3;
-    padding-bottom: 80px;
+    padding: 20px;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .seasoncards{
     width: 90%;
+    
 }
 .season{
     width: 279px;
@@ -716,4 +721,321 @@ button:hover{
     align-items: center;
     justify-content: center;
     border-radius: 8px;
+}
+
+
+/* Customers review section */
+.customers-reviews{
+    width: 90vw;
+    background-color: #030712 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px;
+    gap: 80px;
+}
+
+.customer-reviews-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.customer-reviews-heading > h2{
+    color: white;
+    font-size: 30px;
+}
+.customer-reviews-heading > p{
+    color: #968B8A;
+    font-size: 16px;
+    
+}
+.customer-reviews-cards{
+    display: flex;
+    gap: 20px;
+}
+.review-card{
+    box-sizing: border-box;
+    width: 372px;
+    height: 222px;
+    background-color: #101828;
+    color: white;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 20px;
+    border: 1px solid #968b8a60;
+}
+.stars{
+    color: #D4AF37;
+}
+#customer-profile{
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+}
+.reviewer-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.reviewer-details-left{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.reviewer-details-right{
+    width: 100px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #0F2A29;
+    color: green;
+    border-radius: 12px;
+}
+.security-partners{
+    border-top: 1px solid #968b8a56;
+    height: 100px;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    gap: 25px;
+}
+.reviewer-partner{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* First order Section */
+.first-order{
+    width: 100vw;
+    height: 80vh;
+    background:
+    radial-gradient(circle at 10% 10%, rgba(255, 187, 0, 0.25), transparent 40%),
+    radial-gradient(circle at 85% 70%, rgba(201, 29, 207, 0.35), transparent 40%),
+    linear-gradient(90deg, #0b1220, #0a1930);
+    overflow: hidden;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-order-left{
+    width: 45%;
+    height: 80%;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.first-order-left> h2{
+    color: white;
+    font-size: 36px;
+}
+.first-order-left >p{
+    color: white;
+    font-size: 18px;
+}
+.input-button{
+    height: 58px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.input-button > input{
+    height: 54px;
+    width: 65%;
+    font-size: 24px;
+    border-radius: 5px;
+    padding-left: 20px;
+    background-color: transparent;
+    border: none;
+    border: 1px solid #968b8a57;
+
+}
+.condition{
+    font-size: 18px;
+    color: #968b8a63;
+}
+.input-button > button{
+    width: 30%;
+    height: 58px;
+}
+
+
+.first-order-right{
+    width: 48%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+    row-gap: 30px;
+    column-gap: 30px;
+  /* gap: 25px; */
+
+}
+.first-order-offers{
+    /* width: 45%;
+    height: 45%; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background-color: #0307122f;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+}
+.first-order-offers > i{
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+.first-order-offers > h3{
+    color: white;
+}
+.first-order-offers > p{
+    font-size: 14px;
+    color: #968b8abd;
+}
+
+/* News letter Section */
+.newsletter{
+    box-sizing: border-box;
+    width: 100vw;
+    height: 120px;
+    background-color: #030712;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 80px;
+    gap: 100px;
+    border-bottom: 1px solid #968b8a3a;
+
+}
+.newsletter-left{
+    color: white;
+    width: 50%;
+    font-size: 20px;
+}
+.newsletter-left > p{
+    color: #968B8A;
+    font-size: 18px;
+}
+body{
+    background-color: #030712;
+}
+
+/* footer Styling */
+footer{
+    background-color: #030712;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.social-details{
+    width: 224px;
+    height: 244px;
+    color: #968B8A;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+.social-icon-div{
+
+    margin: 0;
+}
+.social-icons{
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+.footer-div-parent{
+    display: flex;
+    gap: 40px;
+}
+.footer-div{
+    width: 224px;
+    height: 244px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+.footer-div ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-div li{
+    color: #968B8A;
+    list-style: none;
+}
+.footer-div>li{
+    color: #AA49B4;
+}
+.footer-div a{
+    color: #968B8A;
+}
+.footer-div a:hover{
+    color: #AA49B4;
+}
+
+/* reserve */
+.reserve{
+    box-sizing: border-box;
+    width: 100%;
+    height: 70px;
+    background-color: #030712;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    border-top: 1px solid #968b8a52;
+    color: #968B8A;
+}
+.terms-cards{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+.terms{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+.debitcards{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.terms>p:hover{
+    color: white;
+    font-size: 18px;
+}
+.debitcards > img{
+    width: 40px;
+    height: 30px;
+    border-radius: 5px;
 }
