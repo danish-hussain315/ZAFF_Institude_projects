@@ -1,0 +1,257 @@
+.top{
+    background-color: #030712;
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+.left{
+    display: flex;
+    align-items: center;
+}
+.inner-left{
+    width: 163px;
+    height: 59px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner-left img{
+    width: 123px;
+    height: 30px;
+}
+.inner-right{
+    width: 171px;
+    height: 59px;
+    background-color: rgba(14, 13, 13, 0.836);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner-right a{
+    text-decoration: none;
+    color: #dddee0cc;
+}
+.right{
+    width: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.right div{
+    margin: 0;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    border-left: 1px solid #b3b1b1cc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #b3b1b1cc;
+}
+#cart-logo{
+    background-color: lawngreen;
+}
+.right-options :hover{
+    color: white;
+}
+#heart :hover{
+    color: red;
+}
+#cart-logo:hover{
+    background-color: rgba(14, 13, 13, 0.836) ;
+}
+
+header{
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    margin-top: 60px;
+}
+nav{
+    height: 64px;
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0);
+    position: sticky;
+    top: 60px;
+    z-index: 1;
+    border-top: 1px solid #968b8a62;
+}
+#logo-icon{
+    font-size: 24px;
+    color: rgb(199, 101, 142);
+}
+.icone-div{
+    height: 64px;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+.links{
+    width: 400px;
+    height: 64px;
+}
+
+.links > ul {
+    width: 370px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    
+}
+
+h1{
+    color: azure;
+    text-decoration: underline  sandybrown;
+    font-size: 24px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 800;
+    color: azure;
+}
+.right-options{
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 24px;
+    color: azure;
+}
+.right-options i{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right-options i:hover{
+    background-color: #968b8a5e;
+    border-radius: 5px;
+}
+.nav{
+    height: 100vh;
+    background-color: #C026D3;
+}
+.links a:hover{
+    color: #C026D3;
+}
+
+ .hover-options{
+    width: 150px;
+    height: 200px;
+    background-color: whitesmoke;
+    position: absolute;
+    display: none;
+    
+
+}
+.hover-options > a{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    gap: 10px;
+    border-bottom: 2px solid #cb862b;
+
+}
+.anc:hover + .hover-options{
+    display: block;
+    
+}
+
+/* New Task to implement */
+/* Water filling effect */
+
+.water-fill-transition{
+    
+    width: 400px;
+    height: 80px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    position: relative;
+
+}
+.water-fill-transition-span{
+    width: 400px;
+    height: 0%;
+    border-bottom: 4px solid #cb862b;
+    background-color: #cb862b;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    transition: height 2s;
+    z-index: -1;
+}
+.water-fill-transition:hover > .water-fill-transition-span{
+    height: 100%;
+}
+
+
+
+.curtain-img{
+    margin-top: 200px;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    background-image: url("../colorlib/assets/7th.jpg");
+    background-size: cover;
+}
+.inner-container{
+    width: 100%;
+    height: 0px;
+    background-color: rgba(0, 0, 0, 0.516);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: height 2s;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* opacity: ; */
+}
+.curtain-img:hover .inner-container{
+    height: 100%;
+    /* content: "+"; */
+}
+
+.plus {
+    font-size: 100px;
+    color: rgba(255, 255, 255, 0.42);
+    opacity: 0;               
+    transition: opacity 0.3s;
+    transition-delay: 2s;    
+    transition-timing-function: ease-out;
+}
+.curtain-img:hover .plus {
+    opacity: 1;               
+}
+
+.transition{
+    width: 300px;
+    height: 300px;
+    transition: all 2s cubic-bezier(0.02, 0.1, 0.02, 2);
+}
+.transition:hover{
+    background-color: #C026D3;
+}
