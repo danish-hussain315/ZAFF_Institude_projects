@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero-section{
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../assets/egypt.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    gap: 50px;
+    padding: 50px 0;
+}
+header{
+    width: 80vw;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-left{
+    width: 150px;
+    height: 60px;
+}
+.header-right{
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+.upper-right-header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-logos a{
+    color: white;
+}
+.social-logos a:hover{
+    color: #FFA725;
+}
+.authentication{
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+    background-color: #FFA725;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    gap: 10px;
+}
+.authentication a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+
+}
+.authentication a:first-child{
+    border-right: 1px solid gainsboro;
+    padding-right: 10px;
+}
+/* navbar bottom */
+.lower-right-header{
+    display: flex;
+    gap: 25px;
+}
+.nav-item{
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    cursor: pointer;
+}
+.nav-item:hover{
+    color: #FFA725;
+}
+.dropdown{
+    display: none;
+    width: 200px;
+    border-top: 2px solid orange;
+    background-color: white;
+    position: absolute;
+    
+}
+.dropdown a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    height: 35px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    border-top: 1px solid rgb(177, 173, 173);
+
+}
+.dropdown a:hover{
+    color: #FFA725;
+}
+.nav-item:hover .dropdown{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+
+/* hero Section Header Completed above*/
+.short-cuts{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+.short-cuts a{
+    color: white;
+    text-decoration: none;
+}
+.short-cuts a:hover{
+    color: #FFA725;
+}
+.short-cuts i{
+    font-size: 20px;
+    color: #FFA725;
+}
+
+h1{
+    font-size: 80px;
+    color: white;
+}
+.egypt-description{
+    font-size: 20px;
+    width: 800px;
+    color: white;
+    text-align: center;
+}
+.enforcing-buttons{
+    display: flex;
+    gap: 25px;
+}
+.enforcing-buttons a{
+    height: 40px;
+    font-size: 22px;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid white;
+}
+.enforcing-buttons a:hover{
+    color: #FFA725;
+    border-color: #FFA725;
+}
+.round-buttons{
+    display: flex;
+    gap: 20px;
+}
+.round-buttons span{
+    width: 18px;
+    height: 18px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.three-cards{
+    width: 80vw;
+    height: 400px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.exploring-card{
+    width: 340px;
+    height: 290px;
+    /* background-color: dodgerblue; */
+    background-image: url("../assets/exlporing.jpg");
+}
+.exploring-card p{
+    line-height: normal;
+}
+.sub-heading{
+    color: #FFA725;
+    font-size: 18px;
+}
+.main-name{
+    font-size: 22px;
+    color: white;
+}
+.water-flow{
+    font-size: 20px;
+    width: fit-content;
+    height: 35px;
+    text-decoration: none;
+    padding: 12px 12px;
+    color: #FFA725;
+    border-bottom: 2px solid #FFA725;
+    position: relative;
+    z-index: 1;
+
+}
+.water-flow::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0%;
+    bottom: 0;
+    left: 0;
+    background-color: #FFA725;
+    transition: all 0.5s ease;
+    z-index: -1;
+
+}
+.water-flow:hover::before{
+    height: 100%;
+}
+.water-flow:hover{
+    color: white;
+}
+
+.exploring-card{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    line-height: 30px;
+    justify-content: center;
+}
+.category-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.category-buttons a{
+    text-decoration: none;
+    height: 30px;
+    border: 2px solid #FFA725;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.category-buttons a:active{
+    background-color: #FFA725;
+    color: black;
+}

@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.parent_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    width: 800px;
+    background-color: rgb(171, 179, 179);
+    padding: 20px;
+    border-radius: 10px;
+}
+.child-container{
+    background-color: blueviolet;
+    min-height: 100px; /* This makes the boxes visible! */
+    border-radius: 10px;
+}
+.child-container:first-child{
+    grid-column: span 3;
+}
+.child-container:nth-child(2){
+    grid-column: span 2;
+    height: 359.656px;
+}
+.child-container:nth-child(4){
+    height: 600.656px;
+}
